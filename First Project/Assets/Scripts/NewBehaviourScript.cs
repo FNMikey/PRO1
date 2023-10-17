@@ -8,11 +8,11 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject bullet;
     float range= 0.2f;
     float timeFired = 0;
-    
+
     IEnumerator Fade()
     {
         Color c = GetComponent<Renderer>().material.color;
-        for (float alpha = 1f; alpha >= 0; alpha -= 0.01f)
+        for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
         {
             c.a = alpha;
             GetComponent<Renderer>().material.color = c;
@@ -24,7 +24,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
       
-        //StartCoroutine(Fade());
+        StartCoroutine(Fade());
 
     }
 
@@ -47,7 +47,7 @@ public class NewBehaviourScript : MonoBehaviour
                 obj.GetComponent<Rigidbody2D>().velocity = targetVector * 5f;
 
 
-                Debug.Log(dot);
+                //Debug.Log(dot);
             }
 
             
