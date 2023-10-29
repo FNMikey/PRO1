@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8654563098433850366}
   - component: {fileID: 5306682403717864838}
+  - component: {fileID: 6243919915278504425}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -84,6 +85,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6243919915278504425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045985125359445456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079d9c6bf9b8582489be693ddb34617b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4088225090837617405
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2108223856040078364}
   - component: {fileID: 2448031849759694080}
+  - component: {fileID: 5196745889748006959}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -144,3 +158,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5196745889748006959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088225090837617405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079d9c6bf9b8582489be693ddb34617b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

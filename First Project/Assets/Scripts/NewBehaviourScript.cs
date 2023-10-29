@@ -8,6 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject bullet;
     float range= 0.2f;
     float timeFired = 0;
+    public float frequency = 0.2f;
 
     IEnumerator Fade()
     {
@@ -40,7 +41,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (dot > 1f - range && dot < 1f + range) 
         {
 
-            if (Time.time - timeFired > 0.2f) 
+            if (Time.time - timeFired > frequency) 
             {
                 timeFired = Time.time;
                 var obj = Instantiate(bullet, transform.position, transform.rotation);
