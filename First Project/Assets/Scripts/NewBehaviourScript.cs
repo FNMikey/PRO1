@@ -36,7 +36,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Rotate(new Vector3(0f, 0f, amount));
 
 
-        var targetVector = (target.transform.position -transform.position).normalized;
+        var targetVector = (target.transform.position - transform.position).normalized;
         var dot = Vector3.Dot(targetVector, transform.up);
         if (dot > 1f - range && dot < 1f + range) 
         {
