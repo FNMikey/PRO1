@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
             c.a = alpha;
             GetComponent<Renderer>().material.color = c;
             yield return new WaitForSeconds(0.1f);
+            Debug.Log("Coroutine" + GetComponent<Renderer>().material.color.a);
         }
     }
 
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
     {
         var obj = collision.gameObject;
         
-        Debug.Log(obj.tag);
+       //Debug.Log(obj.tag);
         if (obj.tag == "Coin") {
             count++;
             Destroy(obj);
