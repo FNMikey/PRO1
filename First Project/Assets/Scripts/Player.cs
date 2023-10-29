@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     {
         StartCoroutine(Fade());
         count = 0;
-        health = 3;
+        health = 4;
     }
 
     // Update is called once per frame

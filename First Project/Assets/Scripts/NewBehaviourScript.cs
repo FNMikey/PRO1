@@ -48,7 +48,7 @@ public class NewBehaviourScript : MonoBehaviour
                 obj.GetComponent<Rigidbody2D>().velocity = targetVector * 5f;
 
 
-                //Debug.Log(dot);
+                Debug.Log(dot);
             }
 
             
